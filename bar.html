@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Responsive Resize for Safari by @thetwopct</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script>
+		function resizeWindow(winSize) {
+			// detect private browsing or not
+			if (safari.application.privateBrowsing) {
+				scrollBar = 0;
+				topGap = 425;
+			} else {
+				scrollBar = 15;
+				topGap = 425;
+			}
+			// detect screen height and then choose what to do
+			var winHeight = screen.availHeight;
+			var screenHeight = window.screen.height;
+			var screenTop = window.screen.top;
+			var screenWidth = window.screen.width;
+			var fromleft = window.screen.left;
+			// Returns the distance in pixels from the left side of the main screen to the left side of the current screen.
+			// designed for portrait 1920 monitors
+			if (winHeight === 1920) {
+				if (winSize === 320) {
+					window.self.resizeTo(320 + scrollBar, 640);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					var moveInline = screen.availHeight - topGap;
+					window.self.moveTo(moveRight, topGap);
+				}
+				if (winSize === 375) {
+					window.self.resizeTo(375 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 414) {
+					window.self.resizeTo(414 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 480) {
+					window.self.resizeTo(480 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 481) {
+					window.self.resizeTo(481 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 767) {
+					window.self.resizeTo(767 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 768) {
+					window.self.resizeTo(768 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 1024) {
+					window.self.resizeTo(1024 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				// 1120 and push to top right
+				if (winSize === 1120) {
+					window.self.resizeTo(1120 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 1240) {
+					window.self.resizeTo(1240 + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, bottomAttach);
+				}
+				if (winSize === 'full-screen') {
+					window.self.resizeTo(screen.availWidth, screen.availHeight - topGap);
+				}
+				if (winSize === 'custom-resize') {
+					var customWidth = parseInt(document.getElementById('custom').value);
+					window.self.resizeTo(customWidth + scrollBar, screen.availHeight - topGap);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					window.self.moveTo(0, bottomAttach);
+				}
+				// plus 1
+				if (winSize === 'one-plus') {
+					window.self.resizeTo(window.innerWidth + 1, screenHeight - screenTop);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					window.self.moveTo(screenWidth - fromLeft, bottomAttach);
+				}
+				// minus 1
+				if (winSize === 'one-minus') {
+					window.self.resizeTo(window.innerWidth - 1, screenHeight - screenTop);
+					var bottomAttach = screen.availHeight - window.innerHeight;
+					window.self.moveTo(screenWidth - fromLeft, bottomAttach);
+				}
+				// move window to top left
+				if (winSize === 'move-left') {
+					window.self.moveTo(0, screen.availHeight - topGap);
+				}
+				// move window to top right
+				if (winSize === 'move-right') {
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, screen.availHeight - topGap);
+				}
+			}
+			// it's a normal screen
+			else {
+				window.self.moveTo(0, 0);
+				if (winSize === 320) {
+					window.self.resizeTo(320 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 375) {
+					window.self.resizeTo(375 + scrollBar, 667);
+				}
+				if (winSize === 414) {
+					window.self.resizeTo(414 + scrollBar, 736);
+				}
+				if (winSize === 480) {
+					window.self.resizeTo(480 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 481) {
+					window.self.resizeTo(481 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 767) {
+					window.self.resizeTo(767 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 768) {
+					window.self.resizeTo(768 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 1024) {
+					window.self.resizeTo(1024 + scrollBar, screen.availHeight);
+				}
+				// 1120 and push to top right
+				if (winSize === 1120) {
+					window.self.resizeTo(1120 + scrollBar, screen.availHeight);
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, 0);
+				}
+				if (winSize === 1240) {
+					window.self.resizeTo(1240 + scrollBar, screen.availHeight);
+				}
+				if (winSize === 'full-screen') {
+					window.self.resizeTo(screen.availWidth, screen.availHeight);
+				}
+				if (winSize === 'one-plus') {
+					window.self.resizeTo(window.innerWidth + 1, screen.availHeight);
+				}
+				if (winSize === 'one-minus') {
+					window.self.resizeTo(window.innerWidth - 1, screen.availHeight);
+				}
+				if (winSize === 'custom-resize') {
+					var customWidth = parseInt(document.getElementById('custom').value);
+					window.self.resizeTo(customWidth + scrollBar, screen.availHeight);
+				}
+				// 1024x768
+				if (winSize === 'top1') {
+					window.self.resizeTo(1024 + scrollBar, 768);
+				}
+				// 1366x768
+				if (winSize === 'top2') {
+					window.self.resizeTo(1366 + scrollBar, 768);
+				}
+				// 1440x900
+				if (winSize === 'top3') {
+					window.self.resizeTo(screen.availWidth, 900);
+				}
+				// 1536x864
+				if (winSize === 'top4') {
+					window.self.resizeTo(screen.availWidth, 864);
+				}
+				// 1280x800
+				if (winSize === 'top5') {
+					window.self.resizeTo(1280 + scrollBar, 800);
+				}
+				// 1280x1024
+				if (winSize === 'top6') {
+					window.self.resizeTo(1280 + scrollBar, 1024);
+				}
+				// move window to top left
+				if (winSize === 'move-left') {
+					window.self.moveTo(0, 0);
+				}
+				// move window to top right
+				if (winSize === 'move-right') {
+					var moveRight = screen.availWidth - window.innerWidth;
+					window.self.moveTo(moveRight, 0);
+				}
+			} // end of else
+		} // end of function
+	</script>
+</head>
+
+<body>
+	<div class="bar">
+		<button class="at320" type="button" onclick="resizeWindow(320)">320</button>
+		<button class="at375" type="button" onclick="resizeWindow(375)">375</button>
+		<button class="at414" type="button" onclick="resizeWindow(414)">414</button>
+		<button class="at480" type="button" onclick="resizeWindow(480)">480</button>
+		<button class="at481" type="button" onclick="resizeWindow(481)">481</button>
+		<button class="at767" type="button" onclick="resizeWindow(767)">767</button>
+		<button class="at768" type="button" onclick="resizeWindow(768)">768</button>
+		<button class="at1024" type="button" onclick="resizeWindow(1024)">1024</button>
+		<button class="at1120" type="button" onclick="resizeWindow(1120)">1120</button>
+		<button class="at1240" type="button" onclick="resizeWindow(1240)">1240</button>
+		<button class="full-screen" type="button" onclick="resizeWindow('full-screen')">Full
+			Screen</button>
+		<button class="one-plus" type="button"
+						onclick="resizeWindow('one-plus')">-1px</button>
+		<button class="one-minus" type="button"
+						onclick="resizeWindow('one-minus')">+1px</button>
+		<div class="divider divider01"></div>
+		<input type="text" id="custom" placeholder="custom" name="custom" value="" />
+		<button type="button" class="resize-button"
+						onclick="resizeWindow('custom-resize')">resize</button>
+		<div class="divider divider02"></div>
+		<div id="top-sizes">
+			<button type="button" class="top-1" onclick="resizeWindow('top1')">1</button>
+			<button type="button" class="top-2" onclick="resizeWindow('top2')">2</button>
+			<button type="button" class="top-3" onclick="resizeWindow('top3')">3</button>
+			<button type="button" class="top-4" onclick="resizeWindow('top4')">4</button>
+			<button type="button" class="top-5" onclick="resizeWindow('top5')">5</button>
+			<button type="button" class="top-6" onclick="resizeWindow('top6')">6</button>
+		</div>
+		<div id="switch-sides">
+			<button class="" type="button" class="window-left"
+							onclick="resizeWindow('move-left')">Left</button>
+			<button class="" type="button" class="window-right"
+							onclick="resizeWindow('move-right')">Right</button>
+		</div>
+	</div>
+</body>
+
+</html>

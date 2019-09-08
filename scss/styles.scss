@@ -1,0 +1,195 @@
+/*
+|-----------------------------------------------
+| Basic Styling
+|-----------------------------------------------
+*/
+
+body {
+	margin: 0;
+	padding: 4px 2px 0;
+	background: url(ios.png) repeat-x;
+}
+
+.bar {
+	height: 26px;
+}
+
+button {
+	color: #eee;
+	display: block;
+	float: left;
+	margin: 0 1px;
+	border: 1px solid #375073;
+	border-radius: 3px;
+	height: 22px;
+	background: -webkit-linear-gradient(
+		top,
+		rgba(129, 150, 178, 1) 0%,
+		rgba(88, 119, 162, 1) 50%,
+		rgba(71, 105, 153, 1) 51%,
+		rgba(74, 108, 155, 1) 100%
+	);
+	text-shadow: #3b4c62 0 -1px 1px;
+	box-shadow: rgba(255, 255, 255, .3) 0 1px 0px, inset rgba(255, 255, 255, .25) 0 1px 1px;
+	font-weight: 700;
+	&:active {
+		border: 1px solid #203358;
+		background: -webkit-linear-gradient(
+			top,
+			rgba(118, 130, 160, 1) 0%,
+			rgba(59, 78, 120, 1) 50%,
+			rgba(37, 60, 106, 1) 51%,
+			rgba(39, 63, 109, 1) 100%
+		);
+		box-shadow: rgba(255, 255, 255, .28) 0 1px 1px, inset rgba(0, 0, 0, .3) 0 1px 0;
+	}
+	&.resize-button {
+		margin-left: 0px;
+		border-radius: 0 3px 3px 0;
+	}
+}
+
+#switch-sides {
+	float: right;
+	button {
+		background: -webkit-linear-gradient(
+			top,
+			rgba(118, 130, 160, 1) 0%,
+			rgba(59, 78, 120, 1) 50%,
+			rgba(37, 60, 106, 1) 51%,
+			rgba(39, 63, 109, 1) 100%
+		);
+		&:active {
+			background: -webkit-linear-gradient(
+				bottom,
+				rgba(118, 130, 160, 1) 0%,
+				rgba(59, 78, 120, 1) 50%,
+				rgba(37, 60, 106, 1) 51%,
+				rgba(39, 63, 109, 1) 100%
+			);
+		}
+	}
+}
+
+.divider {
+	display: block;
+	float: left;
+	width: 3px;
+	height: 22px;
+	background: url(divider.png) no-repeat 0 center;
+	margin-right: 8px;
+	margin-left: 4px;
+}
+
+input[type="text"] {
+	display: block;
+	float: left;
+	border: 1px solid rgba(55, 80, 115, 1.000);
+	border-right: none;
+	margin: 0;
+	padding: 3px 3px 3px 5px;
+	width: 42px;
+	border-radius: 3px 0 0 3px;
+	box-shadow: rgba(255, 255, 255, .3) 0 1px 0px;
+}
+
+/*
+|-----------------------------------------------
+| Base 320px
+|-----------------------------------------------
+*/
+
+@media (max-width: 374px) {
+	.at320,
+	.at480,
+	.at481,
+	.at767,
+	.at1240,
+	.full-screen,
+	.one-plus,
+	.one-minus,
+	.divider02,
+	#custom,
+	.resize-button,
+	#top-sizes {
+		display: none;
+	}
+}
+
+/*
+|-----------------------------------------------
+| 375px up
+|-----------------------------------------------
+*/
+
+@media (max-width: 413px) {
+	.at480,
+	.at481,
+	.at767,
+	.at1240,
+	.full-screen,
+	.one-plus,
+	.one-minus,
+	.divider02,
+	#custom,
+	.resize-button,
+	#top-sizes {
+		display: none;
+	}
+}
+
+/*
+|-----------------------------------------------
+| 414px up
+|-----------------------------------------------
+*/
+
+@media (max-width: 479px) {
+	.at481,
+	.at767,
+	.at1240,
+	.full-screen,
+	.one-plus,
+	.one-minus,
+	.divider02,
+	#custom,
+	.resize-button,
+	#top-sizes {
+		display: none;
+	}
+}
+
+/*
+|-----------------------------------------------
+| 480px up
+|-----------------------------------------------
+*/
+
+@media (max-width: 767px) {
+	.at1240,
+	.full-screen,
+	.one-plus,
+	.one-minus,
+	.divider02,
+	#custom,
+	.resize-button,
+	#top-sizes {
+		display: none;
+	}
+}
+
+/*
+|-----------------------------------------------
+| 768px up
+|-----------------------------------------------
+*/
+
+@media (max-width: 1023px) {
+	#custom,
+	.resize-button,
+	#top-sizes {
+		display: none;
+	}
+}
+
+// after 1024 show all
