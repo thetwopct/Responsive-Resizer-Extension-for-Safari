@@ -39,7 +39,7 @@ For 15" MacBook users, you can use 320px + 1120px windows next to each other for
 Download
 ============
 
-[Download latest version!](https://github.com/thetwopct/Responsive-Resize-Extension-for-Safari/raw/master/ResponsiveResizerSafari.safariextension.zip)
+[Download latest version!](https://github.com/thetwopct/Responsive-Resizer-Extension-for-Safari/raw/master/ResponsiveResizerSafari.safariextension.zip)
 
 Install
 ============
@@ -47,7 +47,7 @@ Install
 This is an unofficial and unsigned Safari extension.
 
 To install:
-- [Download latest version](https://github.com/thetwopct/Responsive-Resize-Extension-for-Safari/raw/master/ResponsiveResizerSafari.safariextension.zip)
+- [Download latest version](https://github.com/thetwopct/Responsive-Resizer-Extension-for-Safari/raw/master/ResponsiveResizerSafari.safariextension.zip)
 - Move it to somewhere safe and easy to access (Downloads, Documents) and uncompress the zip file
 - Keep the name of the folder as it is
 - Open Safari, go to Preferences, go to Advanced, then click "Show Develop menu in menu bar"

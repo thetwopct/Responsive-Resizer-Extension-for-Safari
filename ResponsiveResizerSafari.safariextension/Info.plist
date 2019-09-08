@@ -7,7 +7,7 @@
 	<key>Builder Version</key>
 	<string>14607.3.9</string>
 	<key>CFBundleDisplayName</key>
-	<string>Responsive Resize for Safari by @thetwopct</string>
+	<string>Responsive Resizer for Safari by @thetwopct</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.thetwopct.responsiveresize</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -75,7 +75,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>hhttps://github.com/thetwopct/Responsive-Resize-Extension-for-Safari</string>
+	<string>hhttps://github.com/thetwopct/Responsive-Resizer-Extension-for-Safari</string>
 	<key>Website</key>
 	<string>https://www.thetwopercent.co.uk</string>
 </dict>
