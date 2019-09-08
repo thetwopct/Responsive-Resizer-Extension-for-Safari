@@ -44,7 +44,7 @@ Download
 Install
 ============
 
-This is an unofficial and unsigned Safari extension.
+This is an unofficial and unsigned Safari extension so you need to install it via Develop menu.
 
 To install:
 - [Download latest version](https://github.com/thetwopct/Responsive-Resizer-Extension-for-Safari/raw/master/ResponsiveResizerSafari.safariextension.zip)
