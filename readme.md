@@ -1,3 +1,6 @@
+Unfortunately this Extension no longer works with Safari 13. Interested in a compatible version? Give [this post a thumb up](https://github.com/thetwopct/Responsive-Resizer-Extension-for-Safari/issues/1).
+============
+
 Responsive Resizer Extension for Safari for MacOS
 ============
 
